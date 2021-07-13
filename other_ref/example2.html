@@ -1,0 +1,36 @@
+<html> 
+<head>
+<style type="text/css">
+    body {
+        font-family:sans-serif;
+    }
+    canvas {
+        padding:5px;
+        border:dotted 1px black;
+    }
+</style>
+
+<script src="http://code.jquery.com/jquery-1.11.0.js"></script>
+<script src="./main.js"></script>
+
+</head>
+
+<body>
+
+    Neighborhood:
+    <select id="neighborhood">
+        <option value="vonneumann">von Neumann</option>
+        <option value="moore">Moore</option>
+    </select>
+    <div>
+        <input type="button" id="startButton" value="Start" />
+        <input type="button" id="stopButton" value="Stop" />
+        <input type="button" id="randomizeButton" value="Randomize" />
+    </div>
+    <div>
+        Generation: <span id="generation">0</span>
+    </div>
+    <canvas id="canvas" width="500" height="500"></canvas>
+
+</body>
+</html>
